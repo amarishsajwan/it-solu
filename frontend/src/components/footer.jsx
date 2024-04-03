@@ -3,7 +3,7 @@ import { FaGooglePlay, FaApple } from "react-icons/fa";
 export default function Footer() {
     return <section className="bg-black-pearl py-28">
         <div className="flex flex-col container max-w-7xl mx-auto text-white">
-            <h2 className="mb-24 text-white font-semibold text-4xl ">Contact Us</h2>
+            <h2 className="mb-24 text-white font-semibold text-4xl ">Contact <span className="text-orange-500">Us</span> </h2>
 
             <form>
                 <div className="flex flex-wrap mb-4 ">

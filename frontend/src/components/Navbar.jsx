@@ -1,42 +1,51 @@
-import React, { useState } from 'react'
-import { AiOutlineMenu } from "react-icons/ai";
+import { useState, useEffect } from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
+
+const navigation = [
+  { name: "Home", href: "#" },
+  { name: "Services", href: "#" },
+  { name: "Blog", href: "#" },
+  { name: "About Us", href: "#" },
+];
 
 export default function Navbar() {
-  const [nav, setNav] = useState(false)
-  const handleNav = () => {
-    setNav(!nav)
-  }
-  return <div className='flex justify-between items-center h-24 max-w-1240px mx-auto px-4'>
-    <a className="logo w-36" href="/">
-      <img
-        src="https://itsulu-react.netlify.app/_next/static/media/logo-dark.c2f49099.png"
-        alt=""
-      />
-    </a>
-    <ul className='hidden sm:flex'>
-      <li className="p-4">Home</li>
-      <li className="p-4">Company</li>
-      <li className="p-4">Resources</li>
-      <li className="p-4">About</li>
-      <li className="p-4">Contact</li>
-    </ul>
-    <div onClick={handleNav} className='block md:hidden '>
-      <AiOutlineMenu size={20} />
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+  return (
+    <div>
+      <div className="flex w-full h-24 px-2.5 bg-white">
+        <div className=" container mx-auto flex justify-between items-center ">
+          <a className="logo w-36" href="/">
+            <img
+              src="https://itsulu-react.netlify.app/_next/static/media/logo-dark.c2f49099.png"
+              alt=""
+            />
+          </a>
+          <div className="menu font-sans font-normal">
+            <nav className="flex gap-x-10">
+              <ul className="flex gap-x-20 font-medium text-stone-950 cursor-default ">
+                <li>
+                  <Link to="services" smooth={true} duration={500}>
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link to="about" smooth={true} duration={500}>
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link to="contact" smooth={true} duration={500}>
+                    Contact Us
+                  </Link>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div></div>
+        </div>
+      </div>
     </div>
-    <div className={!nav ? 'sm:hidden pt-10 fixed left-0 top-0 w-[60%] border-r border-r-gray-900 h-full bg-gray-300 translation ease-in-out duration-500' : ' pt-10 fixed left-[-100%]  translation ease-in-out duration-500'} >
-      <a className="flex ms-4 logo w-36" href="/">
-        <img
-          src="https://itsulu-react.netlify.app/_next/static/media/logo-dark.c2f49099.png"
-          alt=""
-        />
-      </a>
-      <ul className='pt-4 uppercase '>
-        <li className="p-4 border-gray-300">Home</li>
-        <li className="p-4 border-gray-300">Company</li>
-        <li className="p-4 border-gray-300">Resources</li>
-        <li className="p-4 border-gray-300">About</li>
-        <li className="p-4">Contact</li>
-      </ul>
-    </div>
-  </div>
+  );
 }

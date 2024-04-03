@@ -31,10 +31,10 @@ export default function Carousel() {
     return () => clearInterval(interval);
   }, [currentIndex]);
   return (
-    <div className="hidden md:block w-screen h-[500px] m-auto px-1 relative group">
+    <div className=" md:block h-[500px] m-auto relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full bg-center bg-cover duration-500"
+        className=" h-full w-full bg-center bg-cover duration-500"
       ></div>
       <div
         className="hidden group-hover:block absolute top-1/2 -translate-x-0 translate-y-1/2 left-5 rounded-full bg-black/20 text-white cursor-pointer"

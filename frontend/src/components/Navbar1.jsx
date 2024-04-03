@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 
 export default function Navbar() {
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(true)
+
   const handleNav = () => {
     setNav(!nav)
   }
+
   return <div className='flex justify-between items-center h-24 container mx-auto px-4'>
     <a className="logo w-36" href="/">
       <img
@@ -27,10 +29,13 @@ export default function Navbar() {
         Contact Us
       </Link></li>
     </ul>
-    <div onClick={handleNav} className='block md:hidden '>
+    <div onClick={handleNav} className='block md:hidden  hover:bg-slate-300'>
       <AiOutlineMenu size={20} />
     </div>
-    <div className={!nav ? 'md:hidden pt-10 fixed left-0 top-0 w-[60%] z-50 border-r border-r-gray-900 h-full bg-gray-300 translation ease-in-out duration-500' : 'pt-10 fixed left-[-100%]  translation ease-in-out duration-500'} >
+    <div className={!nav ? 'md:hidden pt-10 fixed left-0 top-0 w-[1000%] z-50 border-r border-r-gray-900 h-full bg-gray-300 translation ease-in-out duration-500' : 'md:hidden pt-10 z-50 fixed left-[-100%]  translation  ease-in-out duration-500'} >
+      <div className='absolute right-1 top-1' onClick={handleNav}>
+        <AiOutlineClose color='black' size={20} />
+      </div>
       <a className="flex ms-4 logo w-36" href="/">
         <img
           src="https://itsulu-react.netlify.app/_next/static/media/logo-dark.c2f49099.png"

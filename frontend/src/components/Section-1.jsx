@@ -3,17 +3,17 @@ import React from "react";
 export default function Services() {
   return (
     <section className="box-border services pt-16 pb-24 bg-white">
-      <div className="  container max-w-7xl mx-auto">
+      <div className="  container max-w-7xl">
         <h2 className="text-4xl mb-8 font-sans font-semibold">
           How We Can <span className="text-orange-500">Help You</span>
         </h2>
-        <div className="flex flex-col sm:flex-row">
-          <div className=" flex flex-col divide-y-4 divide-gray-c mr-8">
+        <div className="flex flex-col md:flex-row">
+          <div className=" flex flex-col divide-y-4 divide-gray-c md:mr-8">
             <h4 className="mb-6 mt-3 text-2xl font-semibold">IT Services</h4>
             <div className="flex px-8 py-8 justify-between  ">
               <div className=" w-1/3">
-                <div className="image flex w-10 h-10">
-                  <img
+                <div className="relative before:content-[''] before:w-5 before:h-5 before:bg-orange-500 before:rounded-full before:absolute  before:-bottom-[2px] before:-right-[3px] image flex w-10 h-10 ">
+                  <img className="relative"
                     src="https://itsulu-react.netlify.app/img/icons/md/1.svg"
                     alt="icon"
                   />
@@ -30,8 +30,8 @@ export default function Services() {
             </div>
             <div className="flex px-8 py-8 justify-between  ">
               <div className=" w-1/3">
-                <div className="image flex w-10 h-10">
-                  <img
+                <div className="relative before:content-[''] before:w-5 before:h-5 before:bg-orange-500 before:rounded-full before:absolute  before:-bottom-[2px] before:-right-[3px] image flex w-10 h-10">
+                  <img className="relative"
                     src="https://itsulu-react.netlify.app/img/icons/md/2.svg"
                     alt="icon"
                   />
@@ -48,8 +48,8 @@ export default function Services() {
             </div>
             <div className="flex px-8 py-8 justify-between  ">
               <div className=" w-1/3">
-                <div className="image flex w-10 h-10">
-                  <img
+                <div className="relative before:content-[''] before:w-5 before:h-5 before:bg-orange-500 before:rounded-full before:absolute  before:-bottom-[2px] before:-right-[3px] image flex w-10 h-10">
+                  <img className="relative"
                     src="https://itsulu-react.netlify.app/img/icons/md/3.svg"
                     alt="icon"
                   />
@@ -68,12 +68,12 @@ export default function Services() {
 
 
           </div>
-          <div className=" flex flex-col divide-y-2 divide-gray-c ">
+          <div className=" flex flex-col divide-y-4 divide-gray-c ">
             <h4 className="mb-6 mt-3 text-2xl font-semibold">IT Solutions</h4>
             <div className="flex px-8 py-8 justify-between  ">
               <div className=" w-1/3">
-                <div className="image flex w-10 h-10">
-                  <img
+                <div className="relative before:content-[''] before:w-5 before:h-5 before:bg-orange-500 before:rounded-full before:absolute  before:-bottom-[2px] before:-right-[3px] image flex w-10 h-10">
+                  <img className="relative"
                     src="https://itsulu-react.netlify.app/img/icons/md/4.svg"
                     alt="icon"
                   />
@@ -90,8 +90,8 @@ export default function Services() {
             </div>
             <div className="flex px-8 py-8 justify-between  ">
               <div className=" w-1/3">
-                <div className="image flex w-10 h-10">
-                  <img
+                <div className="relative before:content-[''] before:w-5 before:h-5 before:bg-orange-500 before:rounded-full before:absolute  before:-bottom-[2px] before:-right-[3px] image flex w-10 h-10">
+                  <img className="relative"
                     src=" https://itsulu-react.netlify.app/img/icons/md/5.svg"
                     alt="icon"
                   />
@@ -108,8 +108,8 @@ export default function Services() {
             </div>
             <div className="flex px-8 py-8 justify-between  ">
               <div className=" w-1/3">
-                <div className="image flex w-10 h-10">
-                  <img
+                <div className="relative before:content-[''] before:w-5 before:h-5 before:bg-orange-500 before:rounded-full before:absolute  before:-bottom-[2px] before:-right-[3px] image flex w-10 h-10">
+                  <img className="relative"
                     src="https://itsulu-react.netlify.app/img/icons/md/6.svg"
                     alt="icon"
                   />
@@ -129,6 +129,6 @@ export default function Services() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   );
 }

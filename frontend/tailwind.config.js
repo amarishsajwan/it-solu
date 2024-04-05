@@ -7,7 +7,6 @@ export default {
       center: true,
       // or have default horizontal padding
       padding: '30px',
-      center:true,
 
       // default breakpoints but with 40px removed
       screens: {

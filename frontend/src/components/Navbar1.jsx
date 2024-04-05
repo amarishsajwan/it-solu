@@ -44,10 +44,14 @@ export default function Navbar() {
       </a>
       <ul className='pt-4 uppercase'>
         <li className="p-4 border-gray-300 cursor-default">Home</li>
-        <li className="p-4 border-gray-300 cursor-default">Company</li>
+        <li onClick={handleNav} className="p-4 border-gray-300 cursor-default"> <Link to="services" smooth={true} duration={500}>
+          Services
+        </Link></li>
         <li className="p-4 border-gray-300 cursor-default">Resources</li>
         <li className="p-4 border-gray-300 cursor-default">About</li>
-        <li className="p-4">Contact</li>
+        <li className="p-4  border-gray-300 cursor-default" onClick={handleNav}><Link to="contact" smooth={true} duration={500}>
+          Contact Us
+        </Link></li>
       </ul>
     </div>
 

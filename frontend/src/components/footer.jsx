@@ -2,7 +2,7 @@ import { FaGooglePlay, FaApple } from "react-icons/fa";
 
 export default function Footer() {
     return <section className="bg-black-pearl py-28">
-        <div className="flex flex-col container max-w-7xl mx-auto text-white">
+        <div className="flex flex-col container max-w-7xl text-white">
             <h2 className="mb-24 text-white font-semibold text-4xl ">Contact <span className="text-orange-500">Us</span> </h2>
 
             <form>
@@ -35,11 +35,11 @@ export default function Footer() {
                     {/* Second Div */}
                     <div className="w-full md:w-1/2 px-3  ">
                         {/* Your form inputs for the second div */}
-                        <div className="h-full w-full">
+                        <div className="h-full w-full transition duration-600 ease-in-out border-b-2 border-gray-300/30 hover:border-gray-300 focus:border-gray-300">
                             <label className="block text-white font-medium" htmlFor="inputField3">
                                 Address*
                             </label>
-                            <textarea className="bg-transparent h-full w-full font-normal py-2 text-white focus:outline-none border-b-2   transition duration-600 ease-in-out border-gray-300/30 hover:border-gray-300 focus:border-gray-300 " id="inputField3" type="text" placeholder="" />
+                            <textarea className="bg-transparent h-full w-full font-normal pt-2 text-white focus:outline-none " id="inputField3" type="text" placeholder="" />
                         </div>
                     </div>
                 </div>
@@ -54,9 +54,9 @@ export default function Footer() {
 
 
 
-            <div className="py-32 max-w-screen-2xl">
+            <div className="py-32">
                 <div className="flex flex-col sm:gap-y-24 sm:flex-row justify-center sm:gap-x-4 items-center">
-                    <div className=" sm:w-2/5 px-4 text-sm mb-8 font-normal">
+                    <div className=" sm:w-2/5 text-sm mb-8 font-normal">
                         <img className="w-36 mb-7" src="https://itsulu-react.netlify.app/img/logo/logo-light.png" alt="logo" />
                         <p className="mb-7 text-white opacity-50 ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
                         <a className=" inline-flex gap-x-4 py-3 mb-1 mr-4 rounded-md items-center text-sm bg-black transition ease-in-out duration-300  hover:bg-gray-700 " href="">

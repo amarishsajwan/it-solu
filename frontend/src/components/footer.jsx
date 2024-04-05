@@ -45,9 +45,9 @@ export default function Footer() {
                 </div>
 
                 {/* Submit Button */}
-                <div className="container mx-auto pt-4">
-                    <button className=" inline-flex items-center justify-center w-full h-16 bg-orange-500 transition-all ease-in-out hover:bg-orange-400 text-black font-medium cursor-pointer px-16 rounded-full focus:outline-none text-center text-lg " type="button">
-                        Send Message Now
+                <div className="flex box-border w-full pt-4">
+                    <button className=" w-full inline-flex items-center justify-center h-16 bg-orange-500 transition-all ease-in-out hover:bg-orange-400  font-base font-medium cursor-pointer px-16 rounded-full focus:outline-none text-center sm:text-lg whitespace-nowrap " type="button">
+                        <span className="text-black"> Send Message Now</span>
                     </button>
                 </div>
             </form>
@@ -55,24 +55,24 @@ export default function Footer() {
 
 
             <div className="py-32 max-w-screen-2xl">
-                <div className="flex justify-center gap-x-14 items-center">
-                    <div className="w-2/5 px-4 text-sm font-normal">
+                <div className="flex flex-col sm:gap-y-24 sm:flex-row justify-center sm:gap-x-4 items-center">
+                    <div className=" sm:w-2/5 px-4 text-sm mb-8 font-normal">
                         <img className="w-36 mb-7" src="https://itsulu-react.netlify.app/img/logo/logo-light.png" alt="logo" />
                         <p className="mb-7 text-white opacity-50 ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</p>
-                        <a className=" inline-flex gap-x-4 p-3 rounded-md items-center text-sm bg-black transition ease-in-out duration-300  hover:bg-gray-700 mb-1 mr-4" href="">
-                            <div className="">
-                                <FaGooglePlay size={60} color="white" />
+                        <a className=" inline-flex gap-x-4 py-3 mb-1 mr-4 rounded-md items-center text-sm bg-black transition ease-in-out duration-300  hover:bg-gray-700 " href="">
+                            <div className="flex w-16 justify-center">
+                                <FaGooglePlay size={32} color="white" />
                             </div>
-                            <div className="">
+                            <div className=" w-[130px] ">
                                 <span className="text-xs text-orange-400">Available On the</span>
-                                <div className="text-base font-semibold">App Store</div>
+                                <div className="text-base font-semibold">Google Play</div>
                             </div>
                         </a>
-                        <a className="inline-flex gap-x-1 rounded-md p-3 text-sm bg-black  transition ease-in-out duration-300  hover:bg-gray-700 items-center" href="">
-                            <div className="">
-                                <FaApple size={60} color="white" />
+                        <a className="inline-flex gap-x-4 py-3 mb-1rounded-md   text-sm bg-black  transition ease-in-out duration-300  hover:bg-gray-700 items-center" href="">
+                            <div className="flex w-16 justify-center">
+                                <FaApple size={32} color="white" />
                             </div>
-                            <div className="">
+                            <div className="w-[130px]">
                                 <span className="text-xs text-orange-400">Available On the</span>
                                 <div className="text-base font-semibold">App Store</div>
 
@@ -80,18 +80,18 @@ export default function Footer() {
 
                         </a>
                     </div>
-                    <div className="w-3/5">
-                        <div className="flex">
+                    <div className="sm:w-3/5 w-full text-sm font-normal ">
+                        <div className="flex flex-col w-full sm:flex-row ">
                             <div className="  mb-7">
-                                <h3 className="text-4xl text-white" >Join The <span className="text-orange-400">
+                                <h3 className="text-4xl mb-8 text-white" >Join The <span className="text-orange-400">
                                     ITSulu </span> <br /> Experience</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetuer <br />
                                     adipiscing elit, sed diam nonummy.</p>
                             </div>
-                            <div className="mb-7">
+                            <div className="w-full box-border mb-7">
                                 <form action="">
-                                    <input type="text" />
-                                    <button className="flex"><span>Subscribe Now</span></button>
+                                    <input className="w-full h-[70px] px-8 bg-white mb-1 rounded-full font normal text-center " type="text" placeholder="Your email address" />
+                                    <button className="inline-flex w-full cursor-pointer h-[70px] px-[60px] font-medium whitespace-nowrap items-center justify-center text-center transition bg-orange-500 rounded-full"><span>Subscribe Now</span></button>
                                 </form>
                             </div>
                         </div>

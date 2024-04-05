@@ -3,7 +3,7 @@ import React from "react";
 export default function Services() {
   return (
     <section className="box-border services pt-16 pb-24 bg-white">
-      <div className="  container max-w-7xl">
+      <div className="  container mx-auto max-w-7xl">
         <h2 className="text-4xl mb-8 font-sans font-semibold">
           How We Can <span className="text-orange-500">Help You</span>
         </h2>

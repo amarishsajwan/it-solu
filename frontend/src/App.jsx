@@ -9,7 +9,7 @@ import Footer from "./components/footer";
 
 function App() {
   return (
-    <div className="box-border bg-slate-200">
+    <div className="bg-slate-200">
       <Navbar />
       <Carousel />
       <Element name="services">

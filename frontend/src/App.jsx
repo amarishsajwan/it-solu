@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
-// import Navbar from "./components/Navbar";
-import Navbar from "./components/Navbar1";
+import ProjectSection from "./components/ProjectSection";
+import Navbar from "./components/Navbar";
 import Carousel from "./components/Carousel";
 import Services from "./components/Section-1";
 import { Element } from "react-scroll";
@@ -15,6 +15,7 @@ function App() {
       <Element name="services">
         <Services />
       </Element>
+      <ProjectSection />
       <Element name="contact">
         <Footer />
       </Element>

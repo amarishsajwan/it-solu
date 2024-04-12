@@ -35,11 +35,14 @@ export default function Footer() {
                     {/* Second Div */}
                     <div className="w-full md:w-1/2 px-3  ">
                         {/* Your form inputs for the second div */}
-                        <div className="h-full w-full transition duration-600 ease-in-out border-b-2 border-gray-300/30 hover:border-gray-300 focus:border-gray-300">
+                        <div className="h-full w-full focus:outline-none border-b-2 pb-7  transition duration-600 ease-in-out border-gray-300/30 hover:border-gray-300 focus:border-gray-300">
                             <label className="block text-white font-medium" htmlFor="inputField3">
                                 Address*
                             </label>
-                            <textarea className="bg-transparent h-full w-full font-normal pt-2 text-white focus:outline-none " id="inputField3" type="text" placeholder="" />
+
+                            <textarea className="bg-transparent focus:outline-none resize-none flex h-full w-full font-normal pt-2 text-white " id="inputField3" type="text" placeholder="" />
+
+
                         </div>
                     </div>
                 </div>
@@ -68,7 +71,7 @@ export default function Footer() {
                                 <div className="text-base font-semibold">Google Play</div>
                             </div>
                         </a>
-                        <a className="inline-flex gap-x-4 py-3 mb-1rounded-md   text-sm bg-black  transition ease-in-out duration-300  hover:bg-gray-700 items-center" href="">
+                        <a className="inline-flex gap-x-4 py-3 mb-1 rounded-md   text-sm bg-black  transition ease-in-out duration-300  hover:bg-gray-700 items-center" href="">
                             <div className="flex w-16 justify-center">
                                 <FaApple size={32} color="white" />
                             </div>
@@ -88,7 +91,7 @@ export default function Footer() {
                                 <p>Lorem ipsum dolor sit amet, consectetuer <br />
                                     adipiscing elit, sed diam nonummy.</p>
                             </div>
-                            <div className="w-full box-border mb-7">
+                            <div className="mb-7">
                                 <form action="">
                                     <input className="w-full h-[70px] px-8 bg-white mb-1 rounded-full font normal text-center " type="text" placeholder="Your email address" />
                                     <button className="inline-flex w-full cursor-pointer h-[70px] px-[60px] font-medium whitespace-nowrap items-center justify-center text-center transition bg-orange-500 rounded-full"><span>Subscribe Now</span></button>

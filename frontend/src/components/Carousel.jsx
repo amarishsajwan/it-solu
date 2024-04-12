@@ -34,11 +34,14 @@ export default function Carousel() {
     return () => clearInterval(interval);
   }, [currentIndex]);
   return (
-    <div className=" md:block h-full w-full relative group">
+    <div className="md:block h-screen w-full relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="flex h-screen w-full bg-center bg-cover bg-no-repeat duration-500"
-      ></div>
+        className="flex h-screen w-full bg-center bg-cover bg-no-repeat  duration-500"
+      >
+        <div className="bg-black w-full h-screen bg-opacity-50">
+        </div>
+      </div>
       <div
         className="hidden group-hover:block absolute top-1/2 -translate-x-0 translate-y-1/2 left-5 rounded-full bg-black/20 text-white cursor-pointer"
         onClick={prevSlide}
@@ -54,5 +57,6 @@ export default function Carousel() {
         <ChevronRightIcon className="h-5 w-5" />
       </div>
     </div>
+
   );
 }
